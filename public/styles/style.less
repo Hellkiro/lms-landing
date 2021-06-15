@@ -203,7 +203,7 @@ h2::after{
 /*
     ABOUT PYTHON
 */
-/*
+
 .about-python{    
     .wrapper{
         position: relative;
@@ -262,7 +262,7 @@ h2::after{
     .image{
         position: absolute;
         top: 50px;
-        left: 30%;
+        right: 15%;
         width: 431px;
         height: 600px;
         background: url('../images/teacher.png') no-repeat center;
@@ -283,8 +283,14 @@ h2::after{
     ABOUT COURSE
 */
 .about-course{
+    background: #121212;
     h2{
+        color: #f6ad18;
         margin-bottom: 30px;
+        padding-left: 0px;
+    }
+    h2:after{
+        display: none;
     }
     .wrapper{
         position: relative;
@@ -296,24 +302,65 @@ h2::after{
         z-index: 1;
     }
     .text-block{
-        width: 30%;
+        display: flex;
+        flex-direction: column;        
+        width: 49%;
         h3{
-            color:#121212;
+            min-height: 58px;
+            color: #eceff1;
             font-weight: 700;   
             font-size: 24px;
-            margin-bottom: 30px;
-        }
+            margin-bottom: 30px;            
+        }        
+    }
+    .description{
+        justify-self: flex-start;
+        min-height: 170px;
         p{
-            color:#121212;
+            color: #a7a7a7;
             font-size: 16px;
             margin-bottom: 15px;
+        }
+    }
+    .spoiler{        
+        width: 100%; 
+        margin-top: 30px;       
+        .spoiler-btn{
+            border: 2px solid #eceff1;
+            background: rgba(255, 255, 255, 0.1);
+            color: #eceff1;
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .spoiler-btn:hover{            
+            border-color: #ecbd22;
+            box-shadow: 0px 0px 5px #ecbd22, inset 0px 0px 5px #ecbd22;
+        }
+        .spoiler-text{
+            display: none;
+            padding: 0;
+            transition: padding 0.5s;
+            h4{
+                color: #f6ad18;
+                font-weight: 700;
+                margin: 15px 0;
+            }
+            p{
+                color: #a7a7a7;
+                margin-bottom: 5px;
+            }
+        }
+        .spoiler-text.active{
+            display: block;
+            padding-top: 30px;
         }
     }
 }
 /*
     ABOUT PROCESS
 */
-/*
+
 .about-process{
     .wrapper{
         position: relative;
@@ -359,8 +406,9 @@ h2::after{
 /*
     REVIEWS
 */
-/*
+
 .reviews{
+    background: #121212;    
     .wrapper{
         position: relative;
         display: flex;
@@ -369,37 +417,36 @@ h2::after{
         width: 100%;
         height: 100%;
         z-index: 1;
+    }    
+    h2{
+        color: #f6ad18;
+        margin-bottom: 30px;
+        padding-left: 0px;
+    }
+    h2:after{
+        display: none;
     }
     .reviews-item{
-        width: 100%;
-        height: 132px;
-        background-repeat: no-repeat;        
-    }
-    .rev1{        
-        align-self: flex-end;
-        background-image: url('../images/revs/1.png');
-        background-position: top right;
-    }
-    .rev2{
-        align-self: flex-end;
-        background-image: url('../images/revs/2.png');
-        background-position: top right;
-    }
-    .rev3{
-        align-self: flex-start;
-        background-image: url('../images/revs/3.png');
-        background-position: top left;
-    }
-    .rev4{
-        align-self: flex-end;
-        background-image: url('../images/revs/4.png');
-        background-position: top right;
-    }
-    .rev5{
-        align-self: flex-start;
-        background-image: url('../images/revs/5.png');
-        background-position: top left;
-    }
+        width: 640px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: #eceff1;
+        font-size: 24px;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+        }
+        a{
+            color: #f00;
+            font-weight: 700;
+        }
+    }    
 }
 /*
     FINAL
