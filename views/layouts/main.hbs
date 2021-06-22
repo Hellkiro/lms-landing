@@ -1,6 +1,20 @@
 {{> head}}
 <body>
+<!— Yandex.Metrika counter —>
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
+ym(81068356, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/81068356" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!— /Yandex.Metrika counter —>
     <section class="intro">
         <div class="wrapper">
             <div class="logo">Иван Викторович</div>
@@ -10,10 +24,10 @@
                 <div class="btn"><a href="#about-course">Смотреть программу</a></div>
             </div>
             <div class="bottom-block">
-                <div class="item"><p>Старт</p><p>10 июля</p></div>
+                <div class="item"><p>Старт</p><p>15 июля</p></div>
                 <div class="item"><p>Формат обучения</p><p>2 онлайн занятия в неделю</p></div>
                 <div class="item"><p>Для кого?</p><p>для начинающих</p></div>
-                <div class="item"><p>Длительность</p><p>2 месяца</p></div>
+                <div class="item"><p>Длительность</p><p>3 месяца</p></div>
             </div>
         </div>
         <div class="back">
@@ -164,15 +178,15 @@
         </div>
     </section>
     
-
-    
     <section class="reviews">        
         <div class="wrapper">
             <h2><span>Отзывы</span></h2>               
             <div class="break"></div>            
+            <!--
             <div class="reviews-item">
                 <img src="images/revs/1.png" alt="">
             </div>
+            -->
             <div class="reviews-item">
                 <img src="images/revs/2.png" alt="">
             </div>
@@ -187,8 +201,54 @@
             </div>
         </div>
     </section>
-    
 
+    <section class="faq">
+        <div class="wrapper">
+            <h2><span>Ответы на вопросы</span></h2>
+            <div class="break"></div>
+            <div class="spoiler">
+                <div class="spoiler-btn">
+                    <p>Кто разработал программу?</p>
+                </div>
+                <div class="spoiler-text">
+                    <p>Программа курса разработана лично мной, исходя из опыта преподавания информатики и программирования на Python. Весь процесс обучения грамотно разделен на блоки, чтобы у учеников не возникало путаницы.</p>
+                </div>
+            </div>
+            <div class="spoiler">
+                <div class="spoiler-btn">
+                    <p>Как проходят занятия?</p>
+                </div>
+                <div class="spoiler-text">
+                    <p>Урок представляет собой вебинар, где я объясняю для вас тему, даю практические задания и отвечаю на ваши вопросы. Если вы не можете присутствовать на занятии, то всегда можно посмотреть урок в записи в удобное время. Вопросы по теме также можно задать мне после просмотра записи.</p>
+                </div>
+            </div>
+            <div class="spoiler">
+                <div class="spoiler-btn">
+                    <p>Можно ли пройти курс быстрее/медленнее?</p>
+                </div>
+                <div class="spoiler-text">
+                    <p>Так как все занятия проходят в онлайн-формате, быстрее пройти курс не получится. А вот если вы не успеваете, то вы можете смотреть записи занятий в том режиме, которые вам удобен. Вопросы по темам можно задать независимо от скорости прохождения курса.</p>
+                </div>
+            </div>
+            <div class="spoiler">
+                <div class="spoiler-btn">
+                    <p>Что в итоге?</p>
+                </div>
+                <div class="spoiler-text">
+                    <p>По прохождению курса у вас будет база знаний, которую вы сможете использовать по своему усмотрению. Вы можете продолжить обучение по нескольким направлениям.</p>
+                </div>
+            </div>
+            <div class="spoiler">
+                <div class="spoiler-btn">
+                    <p>Почему так дорого?</p>
+                </div>
+                <div class="spoiler-text">
+                    <p>Те, кто знают меня давно, был на стримах или обучался в группах знают, что весь процесс обучения я контролирую и организовываю сам. За мной не стоят продюссеры, методисты, копирайтеры и другие. На все вопросы отвечаю вам лично я, проверяю домашнее задание тоже. Прежде, чем поставить такую стоимость, я проводил анализ аналогичных школ. В итоге стоимость моего курса оказалась самой минимальной.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section class="final">
         <div class="wrapper">
             <div class="price-block">
@@ -200,6 +260,20 @@
                     </p>
                 </div>                
             </div>
+            <div class="form">
+                <h3>Оставить заявку</h3>
+                <div class="input-con">
+                    <p>Как с Вами связаться: <span>*</span></p>
+                    <input class="input" type="text" placeholder="youremail@mail.ru" required/>
+                </div>
+                <div class="input-con">
+                    <p>Контактный телефон:</p>
+                    <input class="input" type="text" placeholder="89870000000"/>
+                </div>
+                <div class="form-btn">Отправить</div>
+                <div class="response">...</div>
+            </div>
+            <!--
             <div class="social-block">
                 <a target="_blank" href="https://vk.com/plugar_inf">
                     <div class="social-item">                
@@ -214,11 +288,17 @@
                     </div>
                 </a>
             </div>
+            -->
         </div>        
     </section>
 
     <section class="copyright">
-        © Разработка: hellkiro@yandex.ru, 2021
+        
+            <p><b>Youtube:</b> <a href="https://www.youtube.com/c/ioanplugar_inf" target="_blank">ioanplugar_inf</a></p>
+            <p><b>Vk:</b> <a href="https://vk.com/plugar_inf" target="_blank">#plugar_inf</a></p>
+            <p><b>Telegram:</b> <a href="https://t.me/plugar_inf" target="_blank">@plugar_inf</a></p>
+            <p>© Разработка: hellkiro@yandex.ru, 2021</p>      
+        
     </section>
 
 
