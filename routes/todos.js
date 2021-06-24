@@ -10,8 +10,8 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/api/telegram/', async (req, res) => {
-    const token = '1898631611:AAEphCy5d-CHNbIfZZeV7PE38Eikv9Q3EO4';
-    const chat = '-448268106';
+    const token = '';
+    const chat = '';
     try {
         const message = req.body.message;        
         http.post(            
